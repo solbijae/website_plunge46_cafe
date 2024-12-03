@@ -8,6 +8,7 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   background-color: ${({ theme }) => theme.colors.backGroundColor};
+  color: ${({ theme }) => theme.colors.darkBlack};
   box-shadow: ${({ theme }) => theme.shadows.bottomTab};
   z-index: 5;
 
