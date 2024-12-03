@@ -40,7 +40,7 @@ export const ThemeConfig = {
   },
 
   typo: {
-    title1_24_B: typoCreator('1.5rem', 700, '-1.2%', '32px'),
+    title1_24_B: typoCreator('8.86rem', 700, '-1.2%', '32px'),
     title1_24_R: typoCreator('1.5rem', 400, '-1.2px', '26px'),
     title2_20_B: typoCreator('1.25rem', 700, '-0.24px', '28px'),
     title2_20_R: typoCreator('1.25rem', 400, '-1.2px', '26px'),
