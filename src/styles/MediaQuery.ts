@@ -5,7 +5,7 @@ interface ISizes {
 }
 
 const sizes: ISizes = {
-  mobile: 320,
+  mobile: 480,
   tablet: 768,
   laptop: 1024,
 };
