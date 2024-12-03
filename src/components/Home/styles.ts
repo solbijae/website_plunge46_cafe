@@ -26,7 +26,7 @@ export const Title = styled.h2`
   ${({ theme }) => theme.mediaQueries.mobile`
     display: none;
   `}
-`;
+`
 
 export const Image = styled.img`
   width: 100%;
@@ -38,4 +38,4 @@ export const Image = styled.img`
   ${({ theme }) => theme.mediaQueries.mobile`
     width: 400px;
   `}
-`;
+`

@@ -20,4 +20,4 @@ export const Title = styled.h3`
   padding: 5rem 0 2rem 0;
   text-align: center;
   ${({ theme }) => theme.typo.title3_28_B};
-`;
+`
