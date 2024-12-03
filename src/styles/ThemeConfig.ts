@@ -44,6 +44,7 @@ export const ThemeConfig = {
     title1_24_R: typoCreator('1.5rem', 400, '-1.2px', '26px'),
     title2_20_B: typoCreator('1.25rem', 700, '-0.24px', '28px'),
     title2_20_R: typoCreator('1.25rem', 400, '-1.2px', '26px'),
+    title2_20_M: typoCreator('1.25rem', 500, '0', '36px'),
     title3_28_B: typoCreator('1.75rem', 700, '0px', '40px'),
     body1_18_B: typoCreator('1.125rem', 700, '0px', '27px'),
     body1_18_R: typoCreator('1.125rem', 400, '-1.2px', '26px'),
