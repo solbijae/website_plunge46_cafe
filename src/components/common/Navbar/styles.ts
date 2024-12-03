@@ -31,6 +31,7 @@ export const NavItemWrap = styled.ul`
 
 export const MenuIconWrapper = styled.div`
   display: none;
+  cursor: pointer;
 
   ${({ theme }) => theme.mediaQueries.mobile`
     display: block;
