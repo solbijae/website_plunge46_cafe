@@ -1,0 +1,305 @@
+{
+  "menuCategories": [{
+      "id": "coffee",
+      "name": "COFFEE",
+      "note": "Our Plunge Blend is roasted by Coffee Alchemy Marrickville",
+      "items": [{
+          "id": "coffee_1",
+          "name": "Flat White/Latte/Cappucino/Long Black",
+          "regularPrice": 4.30,
+          "largePrice": 4.80,
+          "hasLargeSize": true
+        },
+        {
+          "id": "coffee_2",
+          "name": "Short Black Espresso/Double Espresso/Macchiato",
+          "regularPrice": 4.30,
+          "hasLargeSize": false
+        },
+        {
+          "id": "coffee_3",
+          "name": "Affogato",
+          "regularPrice": 4.80,
+          "hasLargeSize": false
+        },
+        {
+          "id": "coffee_4",
+          "name": "Moccha",
+          "regularPrice": 4.80,
+          "hasLargeSize": false
+        },
+        {
+          "id": "coffee_5",
+          "name": "Hot Chocolate",
+          "regularPrice": 4.80,
+          "hasLargeSize": false
+        },
+        {
+          "id": "coffee_6",
+          "name": "CHAI Latte",
+          "regularPrice": 4.80,
+          "hasLargeSize": false
+        },
+        {
+          "id": "coffee_7",
+          "name": "MATCHA Latte",
+          "regularPrice": 6.00,
+          "hasLargeSize": false
+        },
+        {
+          "id": "coffee_8",
+          "name": "Batch Filter Coffee",
+          "regularPrice": 4.30,
+          "largePrice": 4.80,
+          "hasLargeSize": true
+        },
+        {
+          "id": "coffee_9",
+          "name": "Cold Brewed Coffee",
+          "regularPrice": 4.50,
+          "hasLargeSize": false
+        }
+      ],
+      "extras": [{
+          "id": "extra_1",
+          "name": "Extra Shot",
+          "price": 0.50
+        },
+        {
+          "id": "extra_2",
+          "name": "Non-Dairy Milk",
+          "price": 0.50
+        },
+        {
+          "id": "extra_3",
+          "name": "Decaf",
+          "price": 0.50
+        }
+      ]
+    },
+    {
+      "id": "tea",
+      "name": "TEA",
+      "note": "Supplied by T TOTALER Sydney",
+      "items": [{
+          "id": "tea_1",
+          "name": "Organic English Breakfast Tea",
+          "regularPrice": 4.50,
+          "isLooseLeaf": true,
+          "servedIn": "Pots"
+        },
+        {
+          "id": "tea_2",
+          "name": "French Earl Grey",
+          "regularPrice": 4.50,
+          "isLooseLeaf": true,
+          "servedIn": "Pots"
+        },
+        {
+          "id": "tea_3",
+          "name": "Jasmine Pearl",
+          "regularPrice": 4.50,
+          "isLooseLeaf": true,
+          "servedIn": "Pots"
+        },
+        {
+          "id": "tea_4",
+          "name": "Rosy Mint",
+          "regularPrice": 4.50,
+          "isLooseLeaf": true,
+          "servedIn": "Pots"
+        },
+        {
+          "id": "tea_5",
+          "name": "Coconut Lemon",
+          "regularPrice": 4.50,
+          "isLooseLeaf": true,
+          "servedIn": "Pots"
+        },
+        {
+          "id": "tea_6",
+          "name": "Green/Sencha",
+          "regularPrice": 4.50,
+          "isLooseLeaf": true,
+          "servedIn": "Pots"
+        },
+        {
+          "id": "tea_7",
+          "name": "Cammomile",
+          "regularPrice": 4.50,
+          "isLooseLeaf": true,
+          "servedIn": "Pots"
+        }
+      ],
+      "specialtyTeas": [{
+          "id": "specialty_1",
+          "name": "Spiced Chai House Blend",
+          "regularPrice": 5.00,
+          "servedIn": "pot",
+          "description": "Our bespoke recipe includes: cinnamon quills, star anise, cardamom pods, cloves, bay leaves, black peppercorns, black tea and garam masala",
+          "hasCaffeine": true
+        },
+        {
+          "id": "specialty_2",
+          "name": "Egyptian Tea",
+          "regularPrice": 5.00,
+          "servedIn": "glass",
+          "description": "with black tea, fresh mint & rose syrup",
+          "hasCaffeine": true
+        },
+        {
+          "id": "specialty_3",
+          "name": "Summer Tea",
+          "regularPrice": 5.00,
+          "servedIn": "glass",
+          "description": "with fresh mint, sliced lemon, honey & fresh ginger",
+          "hasCaffeine": false
+        }
+      ]
+    },
+    {
+      "id": "fresh_juices",
+      "name": "FRESH SQUEEZED JUICES",
+      "regularPrice": 8.00,
+      "items": [{
+          "id": "juice_1",
+          "name": "Orange, Lychee and Lime",
+          "ingredients": ["orange", "lychee", "lime"]
+        },
+        {
+          "id": "juice_2",
+          "name": "Green Goodness",
+          "ingredients": ["apple", "celery", "kale", "ginger"]
+        },
+        {
+          "id": "juice_3",
+          "name": "Carrot Top",
+          "ingredients": ["orange", "carrot", "ginger"]
+        },
+        {
+          "id": "juice_4",
+          "name": "Red Glow",
+          "ingredients": ["beetroot", "celery", "carrot", "pear", "cayenne pepper"]
+        }
+      ]
+    },
+    {
+      "id": "milkshakes",
+      "name": "MILKSHAKES",
+      "regularPrice": 7.00,
+      "kidsPrice": 4.00,
+      "items": [{
+          "id": "shake_1",
+          "name": "Chocolate Chip"
+        },
+        {
+          "id": "shake_2",
+          "name": "Strawberry Rose"
+        },
+        {
+          "id": "shake_3",
+          "name": "Vanilla Malt"
+        },
+        {
+          "id": "shake_4",
+          "name": "Banofee",
+          "description": "banana & caramel"
+        }
+      ]
+    },
+    {
+      "id": "smoothies",
+      "name": "SMOOTHIES",
+      "regularPrice": 8.00,
+      "items": [{
+          "id": "smoothie_1",
+          "name": "Strawberry"
+        },
+        {
+          "id": "smoothie_2",
+          "name": "Strawberry/Banana"
+        },
+        {
+          "id": "smoothie_3",
+          "name": "Mixed Berry"
+        }
+      ]
+    },
+    {
+      "id": "frappes",
+      "name": "FRAPPES",
+      "regularPrice": 7.50,
+      "items": [{
+          "id": "frappe_1",
+          "name": "Pineapple & Mint"
+        },
+        {
+          "id": "frappe_2",
+          "name": "Blueberry & Mango"
+        },
+        {
+          "id": "frappe_3",
+          "name": "Mixed Berry"
+        },
+        {
+          "id": "frappe_4",
+          "name": "VEGAN FRAPPE",
+          "regularPrice": 8.50,
+          "ingredients": ["peanut butter", "choc sauce", "banana oat milk", "ice"],
+          "isVegan": true
+        }
+      ]
+    },
+    {
+      "id": "cold_drinks",
+      "name": "COLD DRINKS",
+      "items": [{
+          "id": "cold_1",
+          "name": "Coke, C/No Sugar, Diet Coke, Lemonade",
+          "regularPrice": 4.00
+        },
+        {
+          "id": "cold_2",
+          "name": "Still Spring Water",
+          "regularPrice": 4.00
+        },
+        {
+          "id": "cold_3",
+          "name": "Sparkling Mineral Water",
+          "sizes": [{
+              "size": "250ml",
+              "price": 5.00
+            },
+            {
+              "size": "750ml",
+              "price": 9.00
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "alcohol",
+      "name": "ALCOHOL",
+      "note": "PLEASE ASK STAFF FOR AVAILABILITY",
+      "items": [{
+          "id": "alcohol_1",
+          "name": "Beer",
+          "regularPrice": 9.00
+        },
+        {
+          "id": "alcohol_2",
+          "name": "White Wine",
+          "glassPrice": 8.50,
+          "bottlePrice": 36.00
+        },
+        {
+          "id": "alcohol_3",
+          "name": "Red Wine",
+          "glassPrice": 9.50,
+          "bottlePrice": 40.00
+        }
+      ]
+    }
+  ]
+}
