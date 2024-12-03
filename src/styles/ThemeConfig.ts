@@ -21,7 +21,6 @@ export const ThemeConfig = {
     gray_3: "#B5B5B5",
     gray_4: "#E9E9E9",
     gray_5: "#F6F6F6",
-    BGray: "#F8F6F5",
     white: "#FFFFFF",
     black: "#000000",
     darkBlack: "#292929",
