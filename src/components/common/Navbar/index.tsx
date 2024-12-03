@@ -5,11 +5,11 @@ import MenuIcon from 'assets/svg/icon-menu';
 const Navbar = () => {
   return (
     <S.Container>
-      <div>
+      <h1>
         <Link to="/">
           <img src="/images/logo-plunge.png" alt="logo" />
         </Link>
-      </div>
+      </h1>
       <S.NavItemWrap>
         <li>
           <Link to="/">about</Link>

@@ -22,7 +22,7 @@ export const Container = styled.div`
 export const NavItemWrap = styled.ul`
   display: flex;
   gap: 15px;
-  ${({ theme }) => theme.typo.title1_24_B};
+  ${({ theme }) => theme.typo.title1_24_R};
 
   ${({ theme }) => theme.mediaQueries.mobile`
     display: none;
