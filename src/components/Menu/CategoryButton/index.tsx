@@ -1,19 +1,23 @@
 import * as S from './styles';
 
 type CategoryButtonProps = {
-  categories: string[];
+  category: string;
+  isExpanded: boolean;
+  onCategoryClick: (category: string) => void;
 }
 
-const CategoryButton = ({ categories }: CategoryButtonProps) => {
+const CategoryButton = ({
+  category,
+  isExpanded,
+  onCategoryClick
+}: CategoryButtonProps) => {
   return (
-    <S.Container>
-      {categories.map((category, index) => (
-        <S.ButtonWrap>
-          <S.CategoryButton key={index}>{category}</S.CategoryButton>
-          <S.PlusIcon />
-        </S.ButtonWrap>
-      ))}
-    </S.Container>
+    <S.ButtonWrap>
+      <S.CategoryButton onClick={() => onCategoryClick(category)}>
+        {category}
+      </S.CategoryButton>
+      <S.PlusIcon isExpanded={isExpanded} />
+    </S.ButtonWrap>
   );
 };
 

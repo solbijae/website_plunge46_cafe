@@ -1,13 +1,9 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  width: 80%;
-`;
-
 export const ButtonWrap = styled.div`
   position: relative;
   margin-bottom: 1rem;
-`
+`;
 
 export const CategoryButton = styled.button`
   padding: 1rem 1rem 1rem 1.5rem;
@@ -23,7 +19,7 @@ export const CategoryButton = styled.button`
   cursor: pointer;
 `;
 
-export const PlusIcon = styled.div`
+export const PlusIcon = styled.div<{ isExpanded: boolean }>`
   position: absolute;
   top: 50%;
   right: 1rem;
@@ -34,7 +30,7 @@ export const PlusIcon = styled.div`
   border-radius: 50%;
   
   &::before {
-    content: "+";
+    content: "${props => props.isExpanded ? '-' : '+'}";
     position: absolute;
     top: 43%;
     left: 47%;
