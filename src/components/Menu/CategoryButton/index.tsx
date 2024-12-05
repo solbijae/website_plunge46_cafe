@@ -1,9 +1,12 @@
 import * as S from './styles';
 
 type CategoryButtonProps = {
-  category: string;
+  category: {
+    id: string;
+    name: string;
+  };
   isExpanded: boolean;
-  onCategoryClick: (category: string) => void;
+  onCategoryClick: (categoryId: string) => void;
 }
 
 const CategoryButton = ({
@@ -13,8 +16,8 @@ const CategoryButton = ({
 }: CategoryButtonProps) => {
   return (
     <S.ButtonWrap>
-      <S.CategoryButton onClick={() => onCategoryClick(category)}>
-        {category}
+      <S.CategoryButton onClick={() => onCategoryClick(category.id)}>
+        {category.name}
       </S.CategoryButton>
       <S.PlusIcon isExpanded={isExpanded} />
     </S.ButtonWrap>
