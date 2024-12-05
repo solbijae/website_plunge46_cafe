@@ -1,14 +1,4 @@
 {
-  "restaurant": "PLUNGE No.46",
-  "global_extras": [{
-      "option": "GLUTEN FREE",
-      "price": 2.00
-    },
-    {
-      "option": "TURKISH BREAD",
-      "price": 1.00
-    }
-  ],
   "categories": [{
       "type": "Breakfast - All Day",
       "items": [{
@@ -259,8 +249,7 @@
       ]
     },
     {
-      "type": "BURGERS and YEEROS",
-      "subtitle": "includes fries",
+      "type": "BURGERS and YEEROS (includes fries)",
       "items": [{
           "id": 1,
           "name": "Chicken Burger",
@@ -356,8 +345,7 @@
       ]
     },
     {
-      "type": "Cakes",
-      "subtitle": "made in-house",
+      "type": "Cakes (made in-house)",
       "items": [{
           "id": 1,
           "name": "Carrot Cake",
@@ -384,10 +372,5 @@
         }
       ]
     }
-  ],
-  "dietary_codes": {
-    "V": "Vegetarian",
-    "Vg": "Vegan",
-    "GF": "Gluten Free"
-  }
+  ]
 }
