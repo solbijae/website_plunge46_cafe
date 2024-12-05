@@ -38,13 +38,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   &::-webkit-scrollbar {
-    background-color: ${(props) => props.theme.colors.gray_3};
+    background-color: ${(props) => props.theme.colors.gray_4};
     width: 0.4rem;
     border-radius: 10px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: ${(props) => props.theme.colors.white};
+    background-color: ${(props) => props.theme.colors.gray_3};
     border-radius: 10px;
   }
 
