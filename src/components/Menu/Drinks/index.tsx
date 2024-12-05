@@ -6,17 +6,17 @@ import { DrinksType } from 'types/drinks';
 
 const Drinks = () => {
   const { data: menu, error } = useFetchData<DrinksType>('/data/menu-drinks.json');
-  const [expandedCategory, setExpandedCategory] = useState<string | null>('coffee');
+  const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
 
   if (error) {
     console.log(error);
   }
 
-  // 카테고리 목록과 아이템들을 가져옴
   const categories = menu?.categories.map((category) => ({
     id: category.id,
     name: category.name,
-    regularPrice: category.regularPrice, // 카테고리의 regularPrice
+    note: category.note,
+    regularPrice: category.regularPrice,
     items: category.items
   })) || [];
 
@@ -37,19 +37,36 @@ const Drinks = () => {
             />
             {expandedCategory === category.id && (
               <S.ItemsContainer>
-                {category.regularPrice && (
-                  <S.CategoryPrice>
-                    All - ${category.regularPrice}
-                  </S.CategoryPrice>
-                )}
+                <S.CategoryContainer>
+                  {category.note && (
+                    <S.CategoryName>
+                      {category.note}
+                    </S.CategoryName>
+                  )}
+                  {category.regularPrice && (
+                    <S.CategoryPrice>
+                      All - ${category.regularPrice}
+                    </S.CategoryPrice>
+                  )}
+                </S.CategoryContainer>
                 
                 {category.items.map((item) => (
                   <S.MenuItem key={item.id}>
                     <S.ItemName>{item.name}</S.ItemName>
                     <S.ItemPrice>
-                      ${item.regularPrice}
+                      {item.regularPrice && `$${item.regularPrice}`}
                       {item.hasLargeSize && item.largePrice && (
                         <span> / Large: ${item.largePrice}</span>
+                      )}
+                      {item.bottlePrice && (
+                        <span> / Bottle: ${item.bottlePrice}</span>
+                      )}
+                      {item.sizes && (
+                        <span>
+                          {item.sizes
+                            .map((size) => `$${size.price} (${size.size})`)
+                            .join(" / ")}
+                        </span>
                       )}
                     </S.ItemPrice>
 

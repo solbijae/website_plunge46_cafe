@@ -44,9 +44,27 @@ export const ItemsContainer = styled.div`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
-export const CategoryPrice = styled.p`
+export const CategoryContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 
-`
+export const CategoryName = styled.p`
+  text-align: left;
+  padding: 0.5rem;
+  ${({ theme }) => theme.typo.body1_18_B};
+  color: ${({ theme }) => theme.colors.gray_1};
+  font-style: italic;
+`;
+
+export const CategoryPrice = styled.p`
+  text-align: right;
+  padding: 0.5rem;
+  ${({ theme }) => theme.typo.body1_18_B};
+  color: ${({ theme }) => theme.colors.primaryColor};
+  font-style: italic;
+`;
 
 export const MenuItem = styled.div`
   position: relative;

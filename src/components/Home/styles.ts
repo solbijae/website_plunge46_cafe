@@ -41,6 +41,7 @@ export const TextWrap = styled.div`
 `;
 
 export const Image = styled.img`
+  padding-bottom: 5rem;
   width: 100%;
 
   ${({ theme }) => theme.mediaQueries.tablet`

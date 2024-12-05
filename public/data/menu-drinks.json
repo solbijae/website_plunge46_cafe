@@ -65,52 +65,46 @@
       "id": "tea",
       "name": "TEA",
       "note": "Supplied by T TOTALER Sydney",
+      "regularPrice": 4.50,
       "items": [{
           "id": "tea_1",
           "name": "Organic English Breakfast Tea",
-          "regularPrice": 4.50,
           "isLooseLeaf": true,
           "servedIn": "Pots"
         },
         {
           "id": "tea_2",
           "name": "French Earl Grey",
-          "regularPrice": 4.50,
           "isLooseLeaf": true,
           "servedIn": "Pots"
         },
         {
           "id": "tea_3",
           "name": "Jasmine Pearl",
-          "regularPrice": 4.50,
           "isLooseLeaf": true,
           "servedIn": "Pots"
         },
         {
           "id": "tea_4",
           "name": "Rosy Mint",
-          "regularPrice": 4.50,
           "isLooseLeaf": true,
           "servedIn": "Pots"
         },
         {
           "id": "tea_5",
           "name": "Coconut Lemon",
-          "regularPrice": 4.50,
           "isLooseLeaf": true,
           "servedIn": "Pots"
         },
         {
           "id": "tea_6",
           "name": "Green/Sencha",
-          "regularPrice": 4.50,
           "isLooseLeaf": true,
           "servedIn": "Pots"
         },
         {
           "id": "tea_7",
           "name": "Cammomile",
-          "regularPrice": 4.50,
           "isLooseLeaf": true,
           "servedIn": "Pots"
         }
@@ -274,13 +268,13 @@
         {
           "id": "alcohol_2",
           "name": "White Wine",
-          "glassPrice": 8.50,
+          "regularPrice": 8.50,
           "bottlePrice": 36.00
         },
         {
           "id": "alcohol_3",
           "name": "Red Wine",
-          "glassPrice": 9.50,
+          "regularPrice": 9.50,
           "bottlePrice": 40.00
         }
       ]
