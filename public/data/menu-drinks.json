@@ -1,5 +1,5 @@
 {
-  "menuCategories": [{
+  "categories": [{
       "id": "coffee",
       "name": "COFFEE",
       "note": "Our Plunge Blend is roasted by Coffee Alchemy Marrickville",
@@ -58,22 +58,6 @@
           "name": "Cold Brewed Coffee",
           "regularPrice": 4.50,
           "hasLargeSize": false
-        }
-      ],
-      "extras": [{
-          "id": "extra_1",
-          "name": "Extra Shot",
-          "price": 0.50
-        },
-        {
-          "id": "extra_2",
-          "name": "Non-Dairy Milk",
-          "price": 0.50
-        },
-        {
-          "id": "extra_3",
-          "name": "Decaf",
-          "price": 0.50
         }
       ]
     },
