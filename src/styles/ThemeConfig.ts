@@ -26,6 +26,7 @@ export const ThemeConfig = {
     darkBlack: '#292929',
     primaryColor: '#F16446',
     backGroundColor: '#FBF5E6',
+    cardColor: '#f7f1de',
   },
 
   shadows: {
