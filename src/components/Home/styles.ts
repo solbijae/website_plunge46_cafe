@@ -1,10 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
+  margin-top: 5rem;
   text-align: center;
+  align-items: center;
   width: 1040px;
-  height: calc(100vh - 100px);
+  height: auto;
 
   ${({ theme }) => theme.mediaQueries.tablet`
     width: 768px;
@@ -14,11 +18,15 @@ export const Container = styled.div`
   `}
 `;
 
+export const TextContainer = styled.div`
+  padding-bottom: 2rem;
+`;
+
 export const Title = styled.h2`
-  padding: 10rem 0;
   text-align: center;
   ${({ theme }) => theme.typo.title1_24_B};
-  color: ${({ theme }) => theme.colors.darkBlack};
+  color: ${({ theme }) => theme.colors.primaryColor};
+  padding-bottom: 3rem;
 
   ${({ theme }) => theme.mediaQueries.tablet`
     display: none;
@@ -28,9 +36,12 @@ export const Title = styled.h2`
   `}
 `;
 
+export const TextWrap = styled.div`
+  ${({ theme }) => theme.typo.label1_16_R};
+`;
+
 export const Image = styled.img`
   width: 100%;
-  padding: 3rem 0;
 
   ${({ theme }) => theme.mediaQueries.tablet`
     width: 700px;
