@@ -57,7 +57,6 @@ export const TextWrap = styled.div`
   flex-direction: column;
 `;
 
-
 export const MapWrap = styled.div`
   width: 77%;
   height: 300px;
@@ -67,4 +66,4 @@ export const MapWrap = styled.div`
     height: 100%;
     border-radius: 5px;
   }
-`
+`;

@@ -9,7 +9,7 @@ export const Container = styled.div`
   p {
     display: flex;
     height: 100px;
-    position : relative;
+    position: relative;
     justify-content: center;
     align-items: center;
     ${({ theme }) => theme.typo.caption1_12_B}

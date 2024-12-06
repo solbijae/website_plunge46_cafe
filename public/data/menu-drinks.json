@@ -4,6 +4,9 @@
       "name": "COFFEE",
       "note": "Our Plunge Blend is roasted by Coffee Alchemy Marrickville",
       "items": [{
+          "id": "coffee_0",
+          "name": "EXTRAS: SHOT(¢50) / NON-DAIRY MILK(¢50) / DECAF(¢50)"
+        }, {
           "id": "coffee_1",
           "name": "Flat White/Latte/Cappucino/Long Black",
           "regularPrice": 4.30,
@@ -108,11 +111,15 @@
           "isLooseLeaf": true,
           "servedIn": "Pots"
         }
-      ],
-      "specialtyTeas": [{
+      ]
+    },
+    {
+      "id": "specialty_teas",
+      "name": "SPECIALTY TEAS",
+      "regularPrice": 5.00,
+      "items": [{
           "id": "specialty_1",
           "name": "Spiced Chai House Blend",
-          "regularPrice": 5.00,
           "servedIn": "pot",
           "description": "Our bespoke recipe includes: cinnamon quills, star anise, cardamom pods, cloves, bay leaves, black peppercorns, black tea and garam masala",
           "hasCaffeine": true
@@ -120,7 +127,6 @@
         {
           "id": "specialty_2",
           "name": "Egyptian Tea",
-          "regularPrice": 5.00,
           "servedIn": "glass",
           "description": "with black tea, fresh mint & rose syrup",
           "hasCaffeine": true
@@ -128,7 +134,6 @@
         {
           "id": "specialty_3",
           "name": "Summer Tea",
-          "regularPrice": 5.00,
           "servedIn": "glass",
           "description": "with fresh mint, sliced lemon, honey & fresh ginger",
           "hasCaffeine": false
@@ -141,8 +146,7 @@
       "regularPrice": 8.00,
       "items": [{
           "id": "juice_1",
-          "name": "Orange, Lychee and Lime",
-          "ingredients": ["orange", "lychee", "lime"]
+          "name": "Orange, Lychee and Lime"
         },
         {
           "id": "juice_2",

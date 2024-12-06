@@ -4,10 +4,10 @@ export type FoodType = {
     items: {
       id: number;
       name: string;
-      price: number;
-      description: string;
-      dietary: string[];
-      extras: {
+      price?: number;
+      description?: string;
+      dietary?: string[];
+      extras?: {
         option: string;
         price: number;
       }[];

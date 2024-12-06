@@ -9,11 +9,11 @@ export const ViewHeight = styled.div`
 
 export const Section = styled.section<{ id: string }>`
   padding: 5rem 0;
-  ${(props) => 
-    props.id === "menu" &&`
-      background-color: #fdfdf7;
+  ${(props) =>
+    props.id === 'menu' &&
     `
-  }
+      background-color: #fdfdf7;
+    `}
 `;
 
 export const selectNone = css`

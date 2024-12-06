@@ -20,6 +20,7 @@ const Drinks = () => {
       name: category.name,
       note: category.note,
       regularPrice: category.regularPrice,
+      kidsPrice: category.kidsPrice,
       items: category.items,
     })) || [];
 
@@ -50,6 +51,9 @@ const Drinks = () => {
                   {category.regularPrice && (
                     <S.CategoryPrice>
                       All - ${category.regularPrice}
+                      {category.kidsPrice &&
+                        `/ Kids - ${category.kidsPrice}`
+                      }
                     </S.CategoryPrice>
                   )}
                 </S.CategoryContainer>

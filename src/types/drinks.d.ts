@@ -8,9 +8,9 @@ export type DrinksType = {
     items: {
       id: string;
       name: string;
-      regularPrice: number;
+      regularPrice?: number;
       largePrice?: number; // largePrice가 없는 항목도 있기 때문에 optional로 설정
-      hasLargeSize: boolean;
+      hasLargeSize?: boolean;
       description?: string; // 일부 항목에 description이 있을 수 있음
       ingredients?: string[]; // ingredients 필드가 있는 항목들
       isLooseLeaf?: boolean; // 일부 항목에 isLooseLeaf가 있음

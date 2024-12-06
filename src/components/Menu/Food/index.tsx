@@ -44,15 +44,17 @@ const Food = () => {
                     <S.MenuItem key={item.id}>
                       <S.ItemName>
                         {item.name}
-                        {item.dietary && `(${item.dietary})`}
+                        {item.dietary && ` (${item.dietary})`}
                       </S.ItemName>
-                      <S.ItemPrice>${item.price}</S.ItemPrice>
+                      <S.ItemPrice>
+                        {item.price && `$${item.price}`}
+                      </S.ItemPrice>
                       <S.ItemDescription>{item.description}</S.ItemDescription>
                       {item.extras && (
                         <S.ItemExtras>
                           {item.extras.map((extra, index) => (
                             <p key={index}>
-                              Option: {extra.option} (${extra.price})
+                              - {extra.option} (${extra.price})
                             </p>
                           ))}
                         </S.ItemExtras>
