@@ -1,22 +1,30 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  background-color: ${({ theme }) => theme.colors.backGroundColor};
+`;
+
+export const NavWrap = styled.div`
   display: flex;
   margin: 0 auto;
   width: 1040px;
-  height: 100px;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
-  background-color: ${({ theme }) => theme.colors.backGroundColor};
   color: ${({ theme }) => theme.colors.darkBlack};
-  box-shadow: ${({ theme }) => theme.shadows.bottomTab};
-  z-index: 5;
 
   ${({ theme }) => theme.mediaQueries.tablet`
-    width: 80%;
+    width: 768px;
   `}
   ${({ theme }) => theme.mediaQueries.laptop`
-    width: 90%;
+    width: 480px;
   `}
 `;
 
