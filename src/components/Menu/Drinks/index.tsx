@@ -37,7 +37,10 @@ const Drinks = () => {
             />
             {expandedCategory === category.id && (
               <S.ItemsContainer>
-                <S.CategoryContainer>
+                <S.CategoryContainer
+                  hasCategoryName={!!category.note}
+                  hasCategoryPrice={!!category.regularPrice}
+                >
                   {category.note && (
                     <S.CategoryName>
                       {category.note}

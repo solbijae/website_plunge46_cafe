@@ -44,9 +44,14 @@ export const ItemsContainer = styled.div`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
-export const CategoryContainer = styled.div`
+export const CategoryContainer = styled.div<{ hasCategoryName: boolean, hasCategoryPrice: boolean }>`
   display: flex;
-  justify-content: space-between;
+  justify-content: ${({ hasCategoryName, hasCategoryPrice }) =>
+    hasCategoryName && hasCategoryPrice
+      ? "space-between"
+      : hasCategoryPrice
+      ? "flex-end"
+      : "flex-start"};
   align-items: center;
 `;
 
