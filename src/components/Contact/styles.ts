@@ -17,7 +17,7 @@ export const Container = styled.div`
 
 export const Title = styled.h3`
   ${({ theme }) => theme.typo.title_h3};
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.primaryColor};
   padding-bottom: 5rem;
 `;
 
