@@ -8,7 +8,7 @@ export const Container = styled.div`
   right: 0;
   width: 100%;
   height: 100px;
-  background-color: ${({ theme }) => theme.colors.backGroundColor};
+  background-color: ${({ theme }) => theme.colors.backGroundColor2};
 `;
 
 export const NavWrap = styled.div`
@@ -35,7 +35,7 @@ export const NavWrap = styled.div`
 export const NavItemWrap = styled.ul`
   display: flex;
   gap: 15px;
-  ${({ theme }) => theme.typo.title1_24_R};
+  ${({ theme }) => theme.typo.title2_20_B};
 
   ${({ theme }) => theme.mediaQueries.mobile`
     display: none;

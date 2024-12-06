@@ -26,6 +26,7 @@ export const ThemeConfig = {
     darkBlack: '#292929',
     primaryColor: '#F16446',
     backGroundColor: '#FBF5E6',
+    backGroundColor2: '#fdfdf7',
     cardColor: '#f7f1de',
   },
 
@@ -43,7 +44,7 @@ export const ThemeConfig = {
   typo: {
     title1_24_B: typoCreator('8.86rem', 900, '0', '1'),
     title1_24_R: typoCreator('1.5rem', 400, '-1.2px', '26px'),
-    title2_20_B: typoCreator('1.25rem', 700, '-0.24px', '28px'),
+    title2_20_B: typoCreator('1.25rem', 600, '-0.24px', '28px'),
     title2_20_R: typoCreator('1.25rem', 400, '-1.2px', '26px'),
     title2_20_M: typoCreator('1.25rem', 500, '0', '36px'),
     title3_28_B: typoCreator('1.75rem', 700, '0px', '40px'),

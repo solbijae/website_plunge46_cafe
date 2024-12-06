@@ -4,10 +4,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-bottom: 5rem;
   align-items: center;
   width: 1040px;
-  padding: 10rem 0 5rem 0;
 
   ${({ theme }) => theme.mediaQueries.tablet`
     width: 768px;

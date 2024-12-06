@@ -4,11 +4,9 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  margin-top: 5rem;
   text-align: center;
   align-items: center;
   width: 1040px;
-  padding-bottom: 5rem;
 
   ${({ theme }) => theme.mediaQueries.tablet`
     width: 768px;
@@ -39,7 +37,7 @@ export const ItemsContainer = styled.div`
   margin-top: 1rem;
   margin-bottom: 2rem;
   padding: 1rem 1.5rem;
-  background-color: ${({ theme }) => theme.colors.cardColor};
+  background-color: ${({ theme }) => theme.colors.backGroundColor};
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
