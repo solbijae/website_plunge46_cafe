@@ -22,7 +22,8 @@ export type DrinksType = {
       }[]; // sizes가 있는 항목들
       bottlePrice?: number; // bottlePrice가 있는 항목들
     }[];
-    specialtyTeas?: { // specialtyTeas가 있을 수 있는 항목
+    specialtyTeas?: {
+      // specialtyTeas가 있을 수 있는 항목
       id: string;
       name: string;
       regularPrice: number;

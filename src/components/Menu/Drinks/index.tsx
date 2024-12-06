@@ -5,20 +5,23 @@ import useFetchData from 'hooks/useFetchData';
 import { DrinksType } from 'types/drinks';
 
 const Drinks = () => {
-  const { data: menu, error } = useFetchData<DrinksType>('/data/menu-drinks.json');
+  const { data: menu, error } = useFetchData<DrinksType>(
+    '/data/menu-drinks.json',
+  );
   const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
 
   if (error) {
     console.log(error);
   }
 
-  const categories = menu?.categories.map((category) => ({
-    id: category.id,
-    name: category.name,
-    note: category.note,
-    regularPrice: category.regularPrice,
-    items: category.items
-  })) || [];
+  const categories =
+    menu?.categories.map((category) => ({
+      id: category.id,
+      name: category.name,
+      note: category.note,
+      regularPrice: category.regularPrice,
+      items: category.items,
+    })) || [];
 
   const handleCategoryClick = (categoryId: string) => {
     setExpandedCategory(expandedCategory === categoryId ? null : categoryId);
@@ -42,9 +45,7 @@ const Drinks = () => {
                   hasCategoryPrice={!!category.regularPrice}
                 >
                   {category.note && (
-                    <S.CategoryName>
-                      {category.note}
-                    </S.CategoryName>
+                    <S.CategoryName>{category.note}</S.CategoryName>
                   )}
                   {category.regularPrice && (
                     <S.CategoryPrice>
@@ -52,7 +53,7 @@ const Drinks = () => {
                     </S.CategoryPrice>
                   )}
                 </S.CategoryContainer>
-                
+
                 {category.items.map((item) => (
                   <S.MenuItem key={item.id}>
                     <S.ItemName>{item.name}</S.ItemName>
@@ -68,16 +69,19 @@ const Drinks = () => {
                         <span>
                           {item.sizes
                             .map((size) => `$${size.price} (${size.size})`)
-                            .join(" / ")}
+                            .join(' / ')}
                         </span>
                       )}
                     </S.ItemPrice>
 
-                    {item.description && <S.ItemDescription>{item.description}</S.ItemDescription>}
+                    {item.description && (
+                      <S.ItemDescription>{item.description}</S.ItemDescription>
+                    )}
 
                     {item.ingredients && item.ingredients.length > 0 && (
                       <S.ItemIngredients>
-                        <strong>Ingredients:</strong> {item.ingredients.join(', ')}
+                        <strong>Ingredients:</strong>{' '}
+                        {item.ingredients.join(', ')}
                       </S.ItemIngredients>
                     )}
                   </S.MenuItem>

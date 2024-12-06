@@ -44,14 +44,17 @@ export const ItemsContainer = styled.div`
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
 
-export const CategoryContainer = styled.div<{ hasCategoryName: boolean, hasCategoryPrice: boolean }>`
+export const CategoryContainer = styled.div<{
+  hasCategoryName: boolean;
+  hasCategoryPrice: boolean;
+}>`
   display: flex;
   justify-content: ${({ hasCategoryName, hasCategoryPrice }) =>
     hasCategoryName && hasCategoryPrice
-      ? "space-between"
+      ? 'space-between'
       : hasCategoryPrice
-      ? "flex-end"
-      : "flex-start"};
+        ? 'flex-end'
+        : 'flex-start'};
   align-items: center;
 `;
 
@@ -91,9 +94,7 @@ export const ItemPrice = styled.p`
   color: ${({ theme }) => theme.colors.primaryColor};
 `;
 
-export const ItemIngredients = styled.p`
-
-`;
+export const ItemIngredients = styled.p``;
 
 export const ItemDescription = styled.p`
   ${({ theme }) => theme.typo.body2_16};

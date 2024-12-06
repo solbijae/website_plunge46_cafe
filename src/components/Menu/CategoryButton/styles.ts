@@ -28,9 +28,9 @@ export const PlusIcon = styled.div<{ isExpanded: boolean }>`
   height: 24px;
   background-color: ${({ theme }) => theme.colors.white};
   border-radius: 50%;
-  
+
   &::before {
-    content: "${props => props.isExpanded ? '-' : '+'}";
+    content: '${(props) => (props.isExpanded ? '-' : '+')}';
     position: absolute;
     top: 43%;
     left: 47%;

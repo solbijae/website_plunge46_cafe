@@ -6,21 +6,24 @@ import { FoodType } from 'types/food';
 
 const Food = () => {
   const { data: menu, error } = useFetchData<FoodType>('/data/menu-food.json');
-  const [expandedCategory, setExpandedCategory] = useState<string | null>("Breakfast - All Day");
+  const [expandedCategory, setExpandedCategory] = useState<string | null>(
+    'Breakfast - All Day',
+  );
 
   if (error) {
     console.log(error);
   }
 
   // categories를 id와 name을 가진 객체로 변환
-  const categories = menu?.categories.map((category) => ({
-    id: category.type, // 'type'을 id로 사용
-    name: category.type, // name도 'type'으로 사용
-  })) || [];
+  const categories =
+    menu?.categories.map((category) => ({
+      id: category.type, // 'type'을 id로 사용
+      name: category.type, // name도 'type'으로 사용
+    })) || [];
 
   const handleCategoryClick = (categoryId: string) => {
     setExpandedCategory(expandedCategory === categoryId ? null : categoryId);
-  }
+  };
 
   return (
     <S.Container>
@@ -48,7 +51,9 @@ const Food = () => {
                       {item.extras && (
                         <S.ItemExtras>
                           {item.extras.map((extra, index) => (
-                            <p key={index}>Option: {extra.option} (${extra.price})</p>
+                            <p key={index}>
+                              Option: {extra.option} (${extra.price})
+                            </p>
                           ))}
                         </S.ItemExtras>
                       )}

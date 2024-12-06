@@ -13,6 +13,7 @@ export const Container = styled.div`
   `}
   ${({ theme }) => theme.mediaQueries.mobile`
     width: 480px;
+    ${theme.typo.label2_14_M};
   `}
 `;
 

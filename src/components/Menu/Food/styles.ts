@@ -72,4 +72,4 @@ export const ItemDescription = styled.p`
 export const ItemExtras = styled.div`
   margin-top: 0.5rem;
   color: ${({ theme }) => theme.colors.gray_1};
-`
+`;

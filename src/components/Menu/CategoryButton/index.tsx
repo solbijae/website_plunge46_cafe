@@ -7,12 +7,12 @@ type CategoryButtonProps = {
   };
   isExpanded: boolean;
   onCategoryClick: (categoryId: string) => void;
-}
+};
 
 const CategoryButton = ({
   category,
   isExpanded,
-  onCategoryClick
+  onCategoryClick,
 }: CategoryButtonProps) => {
   return (
     <S.ButtonWrap>
