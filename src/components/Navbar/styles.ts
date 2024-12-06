@@ -26,6 +26,10 @@ export const NavWrap = styled.div`
   ${({ theme }) => theme.mediaQueries.laptop`
     width: 480px;
   `}
+
+  h1 {
+    cursor: pointer;
+  }
 `;
 
 export const NavItemWrap = styled.ul`
@@ -36,6 +40,10 @@ export const NavItemWrap = styled.ul`
   ${({ theme }) => theme.mediaQueries.mobile`
     display: none;
   `}
+
+  li {
+    cursor: pointer;
+  }
 `;
 
 export const MenuIconWrapper = styled.div`

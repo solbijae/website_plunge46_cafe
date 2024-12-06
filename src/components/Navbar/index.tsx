@@ -12,10 +12,8 @@ const Navbar = () => {
   return (
     <S.Container>
       <S.NavWrap>
-        <h1>
-          <a href="#" onClick={() => scrollToSection('about')}>
-            <img src="/images/logo-plunge.png" alt="logo" />
-          </a>
+        <h1 onClick={() => scrollToSection('about')}>
+          <img src="/images/logo-plunge.png" alt="logo" />
         </h1>
         <S.NavItemWrap>
           <li onClick={() => scrollToSection('about')}>ABOUT</li>
