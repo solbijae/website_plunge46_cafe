@@ -1,4 +1,4 @@
-import { ViewHeight } from 'styles/StyleModule';
+import { ViewHeight, Section } from 'styles/StyleModule';
 import Navbar from './components/Navbar'
 import Home from './components/Home';
 import Food from './components/Menu/Food';
@@ -11,20 +11,20 @@ function App() {
     <div>
       <Navbar />
 
-      <section id="about">
+      <Section id="about">
         <ViewHeight>
           <Home />
         </ViewHeight>
-      </section>
+      </Section>
 
-      <section id="menu">
+      <Section id="menu">
         <Food />
         <Drinks />
-      </section>
+      </Section>
 
-      <section id="contact">
+      <Section id="contact">
         <Contact />
-      </section>
+      </Section>
 
       <Footer />
     </div>
