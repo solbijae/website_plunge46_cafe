@@ -1,26 +1,26 @@
-import { Link } from 'react-router-dom';
 import * as S from './styles';
 import MenuIcon from 'assets/svg/icon-menu';
 
 const Navbar = () => {
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <S.Container>
       <S.NavWrap>
         <h1>
-          <Link to="/">
+          <a href="#" onClick={() => scrollToSection('about')}>
             <img src="/images/logo-plunge.png" alt="logo" />
-          </Link>
+          </a>
         </h1>
         <S.NavItemWrap>
-          <li>
-            <Link to="/">about</Link>
-          </li>
-          <li>
-            <Link to="/">menu</Link>
-          </li>
-          <li>
-            <Link to="/">contact</Link>
-          </li>
+          <li onClick={() => scrollToSection('about')}>ABOUT</li>
+          <li onClick={() => scrollToSection('menu')}>MENU</li>
+          <li onClick={() => scrollToSection('contact')}>CONTACT</li>
         </S.NavItemWrap>
         <S.MenuIconWrapper>
           <MenuIcon />
