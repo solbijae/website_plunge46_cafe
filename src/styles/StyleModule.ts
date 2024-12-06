@@ -1,4 +1,12 @@
-import { css } from 'styled-components';
+import { styled, css } from 'styled-components';
+
+export const ViewHeight = styled.div`
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+  width: auto;
+  min-height: 100vh;
+`
 
 export const selectNone = css`
   -ms-user-select: none;

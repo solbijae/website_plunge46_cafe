@@ -1,13 +1,33 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
+import { ViewHeight } from 'styles/StyleModule';
+import Navbar from './components/Navbar'
+import Home from './components/Home';
+import Food from './components/Menu/Food';
+import Drinks from './components/Menu/Drinks';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <Navbar />
+
+      <section id="about">
+        <ViewHeight>
+          <Home />
+        </ViewHeight>
+      </section>
+
+      <section id="menu">
+        <Food />
+        <Drinks />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+
+      <Footer />
+    </div>
   );
 }
 
