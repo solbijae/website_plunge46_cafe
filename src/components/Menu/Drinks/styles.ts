@@ -18,14 +18,14 @@ export const Container = styled.div`
 
 export const Title = styled.h3`
   ${({ theme }) => theme.typo.title_h3};
-  color: ${({ theme }) => theme.colors.black};
+  color: ${({ theme }) => theme.colors.primaryColor};
   padding-bottom: 3rem;
 `;
 
 export const MenuContainer = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 `;
 

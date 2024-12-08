@@ -10,10 +10,10 @@ export const CategoryButton = styled.button`
   width: 100%;
   text-align: left;
   overflow: visible;
-  background-color: ${({ theme }) => theme.colors.primaryColor};
-  color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.backGroundColor2};
+  color: ${({ theme }) => theme.colors.black};
   ${({ theme }) => theme.typo.body1_18_B};
-  border: none;
+  border: 2px solid ${({ theme }) => theme.colors.primaryColor};
   border-radius: 5px;
   box-shadow: none;
   cursor: pointer;
@@ -26,7 +26,7 @@ export const PlusIcon = styled.div<{ isExpanded: boolean }>`
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.backGroundColor2};
   border-radius: 50%;
 
   &::before {
