@@ -32,6 +32,35 @@ export const InfoWrap = styled.div`
   background-color: ${({ theme }) => theme.colors.backGroundColor2};
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  ${({ theme }) => theme.mediaQueries.mobile`
+    display: flex;
+    flex-direction: column;
+    .item-0 {
+      order: 0;
+    }
+
+    .item-1 {
+      order: 2;
+    }
+
+    .item-2 {
+      order: 1;
+    }
+
+    .item-3 {
+      order: 3;
+    }
+
+    .item-4 {
+      order: 5;
+    }
+
+    .item-5 {
+      order: 4;
+    }
+
+  `}
 `;
 
 export const InfoItems = styled.div`

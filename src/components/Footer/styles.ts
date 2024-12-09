@@ -15,4 +15,9 @@ export const Container = styled.div`
     ${({ theme }) => theme.typo.caption1_12_B}
     color: ${({ theme }) => theme.colors.gray_2};
   }
+
+  ${({ theme }) => theme.mediaQueries.mobile`
+    max-width: 480px;
+    height: 60px;
+  `}
 `;

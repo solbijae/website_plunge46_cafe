@@ -1,5 +1,12 @@
 import { styled, css } from 'styled-components';
 
+export const BodyWrap = styled.div`
+  ${(props) => props.theme.mediaQueries.mobile`
+    max-width: 480px;
+    overflow: hidden;
+  `}
+`;
+
 export const ViewHeight = styled.div`
   display: flex;
   align-items: center;
