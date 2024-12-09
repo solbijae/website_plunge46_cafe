@@ -28,7 +28,12 @@ export const NavWrap = styled.div`
   `}
 
   h1 {
+    width: 80px;
     cursor: pointer;
+  }
+
+  img {
+    width: 100%;
   }
 `;
 
