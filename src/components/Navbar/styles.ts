@@ -46,7 +46,7 @@ export const NavWrap = styled.div`
 export const NavItemWrap = styled.ul`
   display: flex;
   gap: 15px;
-  ${({ theme }) => theme.typo.title2_20_B};
+  ${({ theme }) => theme.typo.desktop_body_20_M};
 
   ${({ theme }) => theme.mediaQueries.mobile`
     display: none;

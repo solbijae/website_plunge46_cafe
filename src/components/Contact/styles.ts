@@ -16,7 +16,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h3`
-  ${({ theme }) => theme.typo.title_h3};
+  ${({ theme }) => theme.typo.desktop_title_h3};
   color: ${({ theme }) => theme.colors.primaryColor};
   padding-bottom: 5rem;
 `;
@@ -66,7 +66,7 @@ export const InfoWrap = styled.div`
 export const InfoItems = styled.div`
   display: flex;
   gap: 0.7rem;
-  ${({ theme }) => theme.typo.body1_18_B};
+  ${({ theme }) => theme.typo.desktop_body_20_M};
 
   iframe {
     width: 100%;

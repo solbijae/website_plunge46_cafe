@@ -5,20 +5,17 @@ export const Container = styled.div`
   padding-bottom: 10rem;
   text-align: center;
   width: 1040px;
-  ${({ theme }) => theme.typo.title2_20_M};
-  color: ${({ theme }) => theme.colors.primaryColor};
 
   ${({ theme }) => theme.mediaQueries.tablet`
     width: 768px;
   `}
   ${({ theme }) => theme.mediaQueries.mobile`
     width: 480px;
-    ${theme.typo.label2_14_M};
   `}
 `;
 
 export const Title = styled.h3`
   padding: 5rem 0 2rem 0;
   text-align: center;
-  ${({ theme }) => theme.typo.title3_28_B};
+  ${({ theme }) => theme.typo.desktop_title_h3};
 `;

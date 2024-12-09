@@ -18,7 +18,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h3`
-  ${({ theme }) => theme.typo.title_h3};
+  ${({ theme }) => theme.typo.desktop_title_h3};
   color: ${({ theme }) => theme.colors.primaryColor};
   padding-bottom: 3rem;
 `;
@@ -75,7 +75,7 @@ export const MenuItem = styled.div`
 `;
 
 export const ItemName = styled.h3`
-  ${({ theme }) => theme.typo.body1_18_B};
+  ${({ theme }) => theme.typo.desktop_body_20_M};
   color: ${({ theme }) => theme.colors.primaryColor};
   margin-bottom: 0.25rem;
 `;
@@ -84,12 +84,12 @@ export const ItemPrice = styled.p`
   position: absolute;
   top: 10px;
   right: 0;
-  ${({ theme }) => theme.typo.body1_18_B};
+  ${({ theme }) => theme.typo.desktop_body_20_M};
   color: ${({ theme }) => theme.colors.primaryColor};
 `;
 
 export const ItemDescription = styled.p`
-  ${({ theme }) => theme.typo.body2_16_R};
+  ${({ theme }) => theme.typo.desktop_body_16_R};
   color: ${({ theme }) => theme.colors.gray700};
 `;
 

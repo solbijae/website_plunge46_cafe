@@ -23,7 +23,7 @@ export const TextContainer = styled.div`
 
 export const Title = styled.h2`
   text-align: center;
-  ${({ theme }) => theme.typo.title1_24_B};
+  ${({ theme }) => theme.typo.desktop_title_h2};
   color: ${({ theme }) => theme.colors.primaryColor};
   padding-bottom: 3rem;
 
@@ -36,7 +36,7 @@ export const Title = styled.h2`
 `;
 
 export const TextWrap = styled.div`
-  ${({ theme }) => theme.typo.label1_16_R};
+  ${({ theme }) => theme.typo.desktop_body_18_R};
 `;
 
 export const Image = styled.img`
