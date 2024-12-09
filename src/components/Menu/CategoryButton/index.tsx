@@ -18,8 +18,9 @@ const CategoryButton = ({
     <S.ButtonWrap>
       <S.CategoryButton onClick={() => onCategoryClick(category.id)}>
         {category.name}
+        <S.Image src={`/images/${category.name}.png`} alt='food and drinks'></S.Image>
+        <S.PlusIcon isExpanded={isExpanded} />
       </S.CategoryButton>
-      <S.PlusIcon isExpanded={isExpanded} />
     </S.ButtonWrap>
   );
 };
