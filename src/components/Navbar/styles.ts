@@ -8,6 +8,7 @@ export const Container = styled.div`
   right: 0;
   width: 100%;
   height: 100px;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.black};
   background-color: ${({ theme }) => theme.colors.backGroundColor2};
 `;
 

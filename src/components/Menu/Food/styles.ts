@@ -37,7 +37,7 @@ export const CategorySection = styled.div`
 
 export const ItemsContainer = styled.div<{ categoryIndex: number }>`
   position: absolute;
-  top: 300px;
+  top: 310px;
   width: 100vw;
   max-width: 1040px;
   margin-top: 1rem;
@@ -45,7 +45,7 @@ export const ItemsContainer = styled.div<{ categoryIndex: number }>`
   padding: 1rem 1.5rem;
   background-color: ${({ theme }) => theme.colors.backGroundColor};
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
   ${({ categoryIndex }) => {
     switch (categoryIndex % 3) {

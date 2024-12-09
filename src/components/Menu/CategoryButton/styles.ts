@@ -13,7 +13,7 @@ export const CategoryButton = styled.button`
   background-color: ${({ theme }) => theme.colors.backGroundColor2};
   color: ${({ theme }) => theme.colors.black};
   ${({ theme }) => theme.typo.body1_18_B};
-  border: 2px solid ${({ theme }) => theme.colors.primaryColor};
+  border: none;
   border-radius: 5px;
   box-shadow: none;
   cursor: pointer;
@@ -26,7 +26,7 @@ export const CategoryButton = styled.button`
 
 export const PlusIcon = styled.div<{ isExpanded: boolean }>`
   padding-top: 0.5rem;
-  text-align: right;
+  text-align: center;
 
   &::before {
     content: '${(props) => (props.isExpanded ? 'SHOW LESS' : 'SHOW MORE')}';
@@ -43,8 +43,9 @@ export const PlusIcon = styled.div<{ isExpanded: boolean }>`
 `;
 
 export const Image = styled.img`
-  padding-top: 1rem;
+  margin-top: 1rem;
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 3px;
 `;
