@@ -10,7 +10,7 @@ export const CategoryButton = styled.button`
   width: 100%;
   text-align: center;
   overflow: visible;
-  background-color: ${({ theme }) => theme.colors.backGroundColor2};
+  background-color: ${({ theme }) => theme.colors.backGroundColor};
   color: ${({ theme }) => theme.colors.black};
   ${({ theme }) => theme.typo.desktop_body_20_M};
   border: none;
@@ -31,11 +31,11 @@ export const PlusIcon = styled.div<{ isExpanded: boolean }>`
   &::before {
     content: '${(props) => (props.isExpanded ? 'SHOW LESS' : 'SHOW MORE')}';
     background-color: ${(props) =>
-      props.isExpanded ? props.theme.colors.backGroundColor2 : props.theme.colors.primaryColor};  
+      props.isExpanded ? props.theme.colors.backGroundColor : props.theme.colors.primaryColor};  
     color: ${(props) =>
-      props.isExpanded ? props.theme.colors.primaryColor : props.theme.colors.backGroundColor2};
+      props.isExpanded ? props.theme.colors.primaryColor : props.theme.colors.backGroundColor};
     border: ${(props) =>
-      props.isExpanded ? `1px solid ${props.theme.colors.primaryColor}` : `1px solid ${props.theme.colors.backGroundColor2}`};
+      props.isExpanded ? `1px solid ${props.theme.colors.primaryColor}` : `1px solid ${props.theme.colors.backGroundColor}`};
     border-radius: 5px;
     padding: 0.3rem;
     ${({ theme }) => theme.typo.desktop_caption1_12_B};

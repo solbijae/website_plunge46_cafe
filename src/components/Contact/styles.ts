@@ -29,7 +29,7 @@ export const InfoWrap = styled.div`
   padding: 3rem 4rem;
   margin-bottom: 2rem;
 
-  background-color: ${({ theme }) => theme.colors.backGroundColor2};
+  background-color: ${({ theme }) => theme.colors.backGroundColor};
   border-radius: 5px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 

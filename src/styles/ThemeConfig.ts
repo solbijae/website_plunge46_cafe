@@ -20,16 +20,12 @@ export const ThemeConfig = {
     gray_2: '#858585',
     gray_3: '#B5B5B5',
     gray_4: '#E9E9E9',
-    gray_5: '#F6F6F6',
     white: '#FFFFFF',
     black: '#000000',
     darkBlack: '#292929',
-    primaryColor: 'black',
-    // backGroundColor: '#FBF5E6',
-    // backGroundColor2: '#fdfdf7',
+    primaryColor: '#000000',
     backGroundColor: '#fff',
-    backGroundColor2: '#fff',
-    cardColor: '#f7f1de',
+    backGroundColor2: '#D8DACF',
   },
 
   shadows: {

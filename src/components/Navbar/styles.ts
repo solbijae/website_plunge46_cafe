@@ -9,7 +9,7 @@ export const Container = styled.div`
   width: 100%;
   height: 100px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.black};
-  background-color: ${({ theme }) => theme.colors.backGroundColor2};
+  background-color: ${({ theme }) => theme.colors.backGroundColor};
 
   ${({ theme }) => theme.mediaQueries.mobile`
     max-width: 480px;
