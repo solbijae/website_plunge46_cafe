@@ -37,7 +37,7 @@ export const CategorySection = styled.div`
 
 export const ItemsContainer = styled.div<{ categoryIndex: number }>`
   position: absolute;
-  top: 65px;
+  top: 300px;
   width: 100vw;
   max-width: 1040px;
   margin-top: 1rem;
