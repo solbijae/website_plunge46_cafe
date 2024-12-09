@@ -24,7 +24,7 @@ export const Section = styled.section<{ id: string }>`
   
   &:nth-child(3) {
     padding-bottom: 100px;
-    background-color: #D8DACF;
+    background-color: ${(props) => props.theme.colors.backGroundColor2};
   }
 
   &:nth-child(4) {
