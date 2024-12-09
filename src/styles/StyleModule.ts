@@ -12,7 +12,7 @@ export const Section = styled.section<{ id: string }>`
   ${(props) =>
     props.id === 'menu' &&
     `
-      background-color: #fdfdf7;
+      background-color: #fff;
     `}
 `;
 

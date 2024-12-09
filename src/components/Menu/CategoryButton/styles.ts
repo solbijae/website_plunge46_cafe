@@ -17,6 +17,11 @@ export const CategoryButton = styled.button`
   border-radius: 5px;
   box-shadow: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.backGroundColor};
+    transition-duration: 0.3s;
+  }
 `;
 
 export const PlusIcon = styled.div<{ isExpanded: boolean }>`
