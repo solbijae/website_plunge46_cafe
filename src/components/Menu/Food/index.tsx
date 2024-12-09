@@ -1,14 +1,20 @@
 import * as S from './styles';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import CategoryButton from '../CategoryButton';
 import useFetchData from 'hooks/useFetchData';
 import { FoodType } from 'types/food';
 
 const Food = () => {
   const { data: menu, error } = useFetchData<FoodType>('/data/menu-food.json');
-  const [expandedCategory, setExpandedCategory] = useState<string | null>(
-    'Breakfast - All Day',
-  );
+  const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
+  const itemsContainerRef = useRef<HTMLDivElement>(null);
+  const [containerHeight, setContainerHeight] = useState(0);
+  useEffect(() => {
+    if (itemsContainerRef.current) {
+      console.log(itemsContainerRef.current.offsetHeight)
+      setContainerHeight(itemsContainerRef.current.offsetHeight);
+    }
+  }, [expandedCategory]);
 
   if (error) {
     console.log(error);
@@ -29,7 +35,7 @@ const Food = () => {
     <S.Container>
       <S.Title>FOOD</S.Title>
       <S.MenuContainer>
-        {categories.map((category) => (
+        {categories.map((category, idx) => (
           <S.CategorySection key={category.id}>
             <CategoryButton
               category={category}
@@ -37,31 +43,34 @@ const Food = () => {
               onCategoryClick={handleCategoryClick}
             />
             {expandedCategory === category.id && (
-              <S.ItemsContainer>
-                {menu?.categories
-                  .find((cat) => cat.type === category.id)
-                  ?.items.map((item) => (
-                    <S.MenuItem key={item.id}>
-                      <S.ItemName>
-                        {item.name}
-                        {item.dietary && ` (${item.dietary})`}
-                      </S.ItemName>
-                      <S.ItemPrice>
-                        {item.price && `$${item.price}`}
-                      </S.ItemPrice>
-                      <S.ItemDescription>{item.description}</S.ItemDescription>
-                      {item.extras && (
-                        <S.ItemExtras>
-                          {item.extras.map((extra, index) => (
-                            <p key={index}>
-                              - {extra.option} (${extra.price})
-                            </p>
-                          ))}
-                        </S.ItemExtras>
-                      )}
-                    </S.MenuItem>
-                  ))}
-              </S.ItemsContainer>
+              <div>
+                <div style={{ height: `${containerHeight}px` }}></div>
+                <S.ItemsContainer ref={itemsContainerRef} categoryIndex={idx}>
+                  {menu?.categories
+                    .find((cat) => cat.type === category.id)
+                    ?.items.map((item) => (
+                      <S.MenuItem key={item.id}>
+                        <S.ItemName>
+                          {item.name}
+                          {item.dietary && ` (${item.dietary})`}
+                        </S.ItemName>
+                        <S.ItemPrice>
+                          {item.price && `$${item.price}`}
+                        </S.ItemPrice>
+                        <S.ItemDescription>{item.description}</S.ItemDescription>
+                        {item.extras && (
+                          <S.ItemExtras>
+                            {item.extras.map((extra, index) => (
+                              <p key={index}>
+                                - {extra.option} (${extra.price})
+                              </p>
+                            ))}
+                          </S.ItemExtras>
+                        )}
+                      </S.MenuItem>
+                    ))}
+                </S.ItemsContainer>
+              </div>
             )}
           </S.CategorySection>
         ))}

@@ -31,16 +31,41 @@ export const MenuContainer = styled.div`
 `;
 
 export const CategorySection = styled.div`
+  position: relative;
   width: 100%;
 `;
 
-export const ItemsContainer = styled.div`
+export const ItemsContainer = styled.div<{ categoryIndex: number }>`
+  position: absolute;
+  top: 65px;
+  width: 100vw;
+  max-width: 1040px;
   margin-top: 1rem;
   margin-bottom: 2rem;
   padding: 1rem 1.5rem;
   background-color: ${({ theme }) => theme.colors.backGroundColor};
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  ${({ categoryIndex }) => {
+    switch (categoryIndex % 3) {
+      case 0:
+        return `
+          left: 0;
+        `;
+      case 1:
+        return `
+          left: 50%;
+          transform: translateX(-50%);
+        `;
+      case 2:
+        return `
+          right: 0;
+        `;
+      default:
+        return '';
+    }
+  }}
 `;
 
 export const MenuItem = styled.div`
