@@ -121,7 +121,7 @@ export const ItemPrice = styled.p`
 export const ItemIngredients = styled.p``;
 
 export const ItemDescription = styled.p`
-  ${({ theme }) => theme.typo.body2_16};
+  ${({ theme }) => theme.typo.body2_16_R};
   color: ${({ theme }) => theme.colors.gray700};
 `;
 
