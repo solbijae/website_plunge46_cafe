@@ -38,7 +38,7 @@ export const PlusIcon = styled.div<{ isExpanded: boolean }>`
       props.isExpanded ? `1px solid ${props.theme.colors.primaryColor}` : `1px solid ${props.theme.colors.backGroundColor}`};
     border-radius: 5px;
     padding: 0.3rem;
-    ${({ theme }) => theme.typo.desktop_caption1_12_B};
+    ${({ theme }) => theme.typo.desktop_body_16_R};
   }
 `;
 
