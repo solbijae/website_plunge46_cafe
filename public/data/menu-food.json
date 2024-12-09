@@ -239,33 +239,36 @@
       ]
     },
     {
-      "type": "BURGERS and YEEROS (includes fries)",
+      "type": "BURGERS and YEEROS",
       "items": [{
           "id": 0,
-          "name": "EXTRAS: GLUTEN FREE($2.00) / TURKISH BREAD($1.00)"
+          "name": "** FRIES INCLUDED"
         }, {
           "id": 1,
+          "name": "EXTRAS: GLUTEN FREE($2.00) / TURKISH BREAD($1.00)"
+        }, {
+          "id": 2,
           "name": "Chicken Burger",
           "price": 18.50,
           "description": "chicken breast crumbed & fried, with red cabbage, pickles & chilli mayo",
           "extras": []
         },
         {
-          "id": 2,
+          "id": 3,
           "name": "Beef Burger",
           "price": 18.50,
           "description": "seasoned premium beef pattie with cheese, gherkin, lettuce, tomato & mustard",
           "extras": []
         },
         {
-          "id": 3,
+          "id": 4,
           "name": "YEEROS/Pulled Lamb Wrap",
           "price": 18.00,
           "description": "slow cooked lamb shoulder, tzatziki, cucumber, tomato, thick cut chips wrapped in souvlaki bread served with side of fries",
           "extras": []
         },
         {
-          "id": 4,
+          "id": 5,
           "name": "YEEROSS/Grilled Spiced Chicken Wrap",
           "price": 18.00,
           "description": "marinated chicken breast, tzatziki, cucumber, tomato, thick cut chips wrapped in souvlaki bread served with side of fries",
