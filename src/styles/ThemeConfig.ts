@@ -60,7 +60,7 @@ export const ThemeConfig = {
     mobile_title_h3: typoCreator('2rem', 700, '0', '1'),
     mobile_body_24_M: typoCreator('1rem', 700, '0', '27px'),
     mobile_body_20_M: typoCreator('0.75rem', 500, '0', '27px'),
-    mobile_body_18_R: typoCreator('0.65rem', 400, '0', '24px'),
+    mobile_body_18_R: typoCreator('0.65rem', 400, '0', '16px'),
     mobile_body_14_R: typoCreator('0.875rem', 400, '-0.192px', '23px'),
     mobile_body_12_M: typoCreator('0.65rem', 500, '0.24px', '20px'),
   },

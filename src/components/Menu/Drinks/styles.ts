@@ -204,13 +204,24 @@ export const ItemPrice = styled.p`
   `}
 `;
 
-export const ItemIngredients = styled.p``;
+export const ItemIngredients = styled.p`
+  color: ${({ theme }) => theme.colors.gray_1};
+  ${({ theme }) => theme.mediaQueries.mobile`
+    ${theme.typo.mobile_body_18_R};
+  `}
+`;
 
 export const ItemDescription = styled.p`
   color: ${({ theme }) => theme.colors.gray_1};
+  ${({ theme }) => theme.mediaQueries.mobile`
+    ${theme.typo.mobile_body_18_R};
+  `}
 `;
 
 export const ItemExtras = styled.div`
   margin-top: 0.5rem;
   color: ${({ theme }) => theme.colors.gray_1};
+  ${({ theme }) => theme.mediaQueries.mobile`
+    ${theme.typo.mobile_body_18_R};
+  `}
 `;
