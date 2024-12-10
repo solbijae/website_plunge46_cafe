@@ -8,7 +8,6 @@ export const Container = styled.div`
   align-items: center;
   width: calc(100vw * 0.8);
   max-width: 1040px;
-  padding-bottom: 5rem;
 
   ${({ theme }) => theme.mediaQueries.tablet`
     width: calc(100vw * 0.8);
