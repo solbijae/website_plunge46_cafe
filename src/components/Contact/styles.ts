@@ -42,6 +42,7 @@ export const InfoWrap = styled.div`
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    width: 400px;
 
     .item-0 {
       order: 0;
@@ -90,18 +91,15 @@ export const InfoItems = styled.div`
 
   span {
     display: block;
-  }
-
-  &:nth-child(4) {
     ${({ theme }) => theme.mediaQueries.mobile`
-      padding-left: calc(24px + 0.7rem);
+      display: inline;
     `}
   }
 
   &:nth-child(5) {
     padding-left: calc(24px + 0.7rem);
     ${({ theme }) => theme.mediaQueries.mobile`
-      padding-left: 0;s
+      padding-left: calc(24px + 0.7rem);
     `}
   }
 
