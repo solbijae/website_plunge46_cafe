@@ -10,9 +10,14 @@ export const Container = styled.div`
   height: 100px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.black};
   background-color: ${({ theme }) => theme.colors.backGroundColor};
+ 
+  ${({ theme }) => theme.mediaQueries.tablet`
+    max-width: 100vw;
+    height: 60px;
+  `}
 
   ${({ theme }) => theme.mediaQueries.mobile`
-    max-width: 480px;
+    max-width: 100vw;
     height: 60px;
   `}
 `;
@@ -27,7 +32,7 @@ export const NavWrap = styled.div`
   color: ${({ theme }) => theme.colors.darkBlack};
 
   ${({ theme }) => theme.mediaQueries.tablet`
-    width: 768px;
+    width: 90%;
   `}
   ${({ theme }) => theme.mediaQueries.mobile`
     width: 90%;

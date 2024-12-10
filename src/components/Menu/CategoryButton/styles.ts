@@ -18,6 +18,10 @@ export const CategoryButton = styled.button`
   box-shadow: none;
   cursor: pointer;
 
+  ${({ theme }) => theme.mediaQueries.tablet`
+    ${theme.typo.tablet_body_24_M};
+  `}
+
   ${({ theme }) => theme.mediaQueries.mobile`
     ${theme.typo.mobile_body_24_M};
   `}
@@ -39,6 +43,10 @@ export const PlusIcon = styled.div<{ isExpanded: boolean }>`
     padding: 0.3rem;
     ${({ theme }) => theme.typo.desktop_body_12_M};
 
+    ${({ theme }) => theme.mediaQueries.tablet`
+      ${theme.typo.tablet_body_12_M};
+    `}
+
     ${({ theme }) => theme.mediaQueries.mobile`
       ${theme.typo.mobile_body_12_M};
     `}
@@ -51,4 +59,8 @@ export const Image = styled.img`
   height: 200px;
   object-fit: cover;
   border-radius: 3px;
+
+  ${({ theme }) => theme.mediaQueries.tablet`
+    height: 150px;
+  `}
 `;

@@ -9,7 +9,7 @@ export const Container = styled.div`
   width: 1040px;
 
   ${({ theme }) => theme.mediaQueries.tablet`
-    width: 768px;
+    width: 700px;
   `}
   ${({ theme }) => theme.mediaQueries.mobile`
     width: 400px;
@@ -20,6 +20,10 @@ export const Title = styled.h3`
   ${({ theme }) => theme.typo.desktop_title_h3};
   color: ${({ theme }) => theme.colors.primaryColor};
   padding-bottom: 3rem;
+
+  ${({ theme }) => theme.mediaQueries.tablet`
+    ${theme.typo.tablet_title_h3};
+  `}
 
   ${({ theme }) => theme.mediaQueries.mobile`
     ${theme.typo.mobile_title_h3};
@@ -78,8 +82,10 @@ export const ItemsContainer = styled.div<{ categoryIndex: number }>`
   }}
 
   ${({ theme }) => theme.mediaQueries.tablet`
-
+    top: 260px;
+    max-width: 700px;
   `}
+
   ${({ theme }) => theme.mediaQueries.mobile`
     max-width: 400px;
   `}
@@ -106,6 +112,10 @@ export const CategoryName = styled.p`
   color: ${({ theme }) => theme.colors.gray_1};
   font-style: italic;
 
+  ${({ theme }) => theme.mediaQueries.tablet`
+    ${theme.typo.tablet_body_20_M};
+  `}
+  
   ${({ theme }) => theme.mediaQueries.mobile`
     ${theme.typo.mobile_body_20_M};
   `}
@@ -118,6 +128,10 @@ export const CategoryPrice = styled.p`
   color: ${({ theme }) => theme.colors.primaryColor};
   font-style: italic;
 
+  ${({ theme }) => theme.mediaQueries.tablet`
+    ${theme.typo.tablet_body_20_M};
+  `}
+
   ${({ theme }) => theme.mediaQueries.mobile`
     ${theme.typo.mobile_body_20_M};
   `}
@@ -129,6 +143,10 @@ export const MenuItem = styled.div`
   padding: 0.5rem;
   ${({ theme }) => theme.typo.desktop_body_14_R};
 
+  ${({ theme }) => theme.mediaQueries.tablet`
+    ${theme.typo.tablet_body_14_R};
+  `}
+
   ${({ theme }) => theme.mediaQueries.mobile`
     ${theme.typo.mobile_body_14_R};
   `}
@@ -138,6 +156,10 @@ export const ItemName = styled.h3`
   margin-bottom: 0.25rem;
   color: ${({ theme }) => theme.colors.primaryColor};
   ${({ theme }) => theme.typo.desktop_body_18_M};
+
+  ${({ theme }) => theme.mediaQueries.tablet`
+    ${theme.typo.tablet_body_20_M};
+  `}
 
   ${({ theme }) => theme.mediaQueries.mobile`
     ${theme.typo.mobile_body_20_M};
@@ -150,6 +172,10 @@ export const ItemPrice = styled.p`
   right: 0;
   color: ${({ theme }) => theme.colors.primaryColor};
   ${({ theme }) => theme.typo.desktop_body_18_M};
+
+  ${({ theme }) => theme.mediaQueries.tablet`
+    ${theme.typo.tablet_body_20_M};
+  `}
 
   ${({ theme }) => theme.mediaQueries.mobile`
     ${theme.typo.mobile_body_20_M};

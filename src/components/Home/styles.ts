@@ -10,8 +10,9 @@ export const Container = styled.div`
   height: auto;
 
   ${({ theme }) => theme.mediaQueries.tablet`
-    width: 768px;
+    width: 700px;
   `}
+  
   ${({ theme }) => theme.mediaQueries.mobile`
     width: 400px;
   `}
@@ -27,9 +28,10 @@ export const Title = styled.h2`
   color: ${({ theme }) => theme.colors.primaryColor};
   padding-bottom: 3rem;
 
-  /* ${({ theme }) => theme.mediaQueries.tablet`
-    display: none;
-  `} */
+  ${({ theme }) => theme.mediaQueries.tablet`
+    ${theme.typo.tablet_title_h2};
+  `}
+
   ${({ theme }) => theme.mediaQueries.mobile`
     ${theme.typo.mobile_title_h2};
   `}
@@ -37,6 +39,10 @@ export const Title = styled.h2`
 
 export const TextWrap = styled.div`
   ${({ theme }) => theme.typo.desktop_body_18_R};
+
+  ${({ theme }) => theme.mediaQueries.tablet`
+    ${theme.typo.tablet_body_18_R};
+  `}
 
   ${({ theme }) => theme.mediaQueries.mobile`
     ${theme.typo.mobile_body_18_R};
