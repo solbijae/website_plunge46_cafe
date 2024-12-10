@@ -1,7 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
+
 export const GlobalStyle = createGlobalStyle`
   ${reset}
+
+  @font-face {
+    font-family: 'NotoSerifKR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
 
   *{
     box-sizing: border-box;
@@ -20,18 +28,11 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration:none;
   }
 
-  @font-face {
-    font-family: 'DM Serif Text';
-    font-style: italic;
-    font-weight: 400;
-    src: url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
-  }
-
   body {
     scrollbar-width: none;
     margin: 0;
     padding: 0;
-    font-family: 'DM Serif Text', "Roboto, Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    font-family: 'NotoSerifKR', 'DM Serif Text', "Roboto, Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     -ms-overflow-style: none; 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

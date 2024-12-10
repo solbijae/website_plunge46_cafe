@@ -17,11 +17,6 @@ export const CategoryButton = styled.button`
   border-radius: 5px;
   box-shadow: none;
   cursor: pointer;
-
-  &:hover {
-    background-color: ${({ theme }) => theme.colors.backGroundColor};
-    transition-duration: 0.3s;
-  }
 `;
 
 export const PlusIcon = styled.div<{ isExpanded: boolean }>`
@@ -38,7 +33,7 @@ export const PlusIcon = styled.div<{ isExpanded: boolean }>`
       props.isExpanded ? `1px solid ${props.theme.colors.primaryColor}` : `1px solid ${props.theme.colors.backGroundColor}`};
     border-radius: 5px;
     padding: 0.3rem;
-    ${({ theme }) => theme.typo.desktop_body_16_R};
+    ${({ theme }) => theme.typo.desktop_body_12_M};
   }
 `;
 

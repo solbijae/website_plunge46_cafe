@@ -12,7 +12,7 @@ export const Container = styled.div`
     position: relative;
     justify-content: center;
     align-items: center;
-    ${({ theme }) => theme.typo.desktop_footer_12_M}
+    ${({ theme }) => theme.typo.desktop_body_12_M}
     color: ${({ theme }) => theme.colors.gray_2};
   }
 

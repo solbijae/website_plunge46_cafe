@@ -72,25 +72,26 @@ export const MenuItem = styled.div`
   position: relative;
   text-align: left;
   padding: 0.5rem;
+  ${({ theme }) => theme.typo.desktop_body_14_R};
 `;
 
 export const ItemName = styled.h3`
-  ${({ theme }) => theme.typo.desktop_body_20_M};
-  color: ${({ theme }) => theme.colors.primaryColor};
   margin-bottom: 0.25rem;
+  color: ${({ theme }) => theme.colors.primaryColor};
+  ${({ theme }) => theme.typo.desktop_body_20_M};
 `;
 
 export const ItemPrice = styled.p`
   position: absolute;
   top: 10px;
   right: 0;
-  ${({ theme }) => theme.typo.desktop_body_20_M};
   color: ${({ theme }) => theme.colors.primaryColor};
+  ${({ theme }) => theme.typo.desktop_body_20_M};
+
 `;
 
 export const ItemDescription = styled.p`
-  ${({ theme }) => theme.typo.desktop_body_16_R};
-  color: ${({ theme }) => theme.colors.gray700};
+  color: ${({ theme }) => theme.colors.gray_1};
 `;
 
 export const ItemExtras = styled.div`
