@@ -180,7 +180,7 @@
       ]
     },
     {
-      "type": "TOASTIES and WRAPS",
+      "type": "Toasties&Wraps",
       "items": [{
           "id": 0,
           "name": "EXTRAS: GLUTEN FREE($2.00) / FRIES($3.00)"
@@ -239,7 +239,7 @@
       ]
     },
     {
-      "type": "BURGERS and YEEROS",
+      "type": "Burgers&Yeeros",
       "items": [{
           "id": 0,
           "name": "** FRIES INCLUDED"
@@ -277,7 +277,7 @@
       ]
     },
     {
-      "type": "LUNCH PLATES and Mezze",
+      "type": "Lunch&Mezze",
       "items": [{
           "id": 1,
           "name": "Tempura Fish Tacos",
@@ -336,7 +336,7 @@
       ]
     },
     {
-      "type": "Cakes (made in-house)",
+      "type": "House Made Cakes",
       "items": [{
           "id": 1,
           "name": "Carrot Cake",

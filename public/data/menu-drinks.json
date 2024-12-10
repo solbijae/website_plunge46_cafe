@@ -1,7 +1,7 @@
 {
   "categories": [{
       "id": "coffee",
-      "name": "COFFEE",
+      "name": "Coffee",
       "note": "Our Plunge Blend is roasted by Coffee Alchemy Marrickville",
       "items": [{
           "id": "coffee_0",
@@ -66,7 +66,7 @@
     },
     {
       "id": "tea",
-      "name": "TEA",
+      "name": "Tea",
       "note": "Supplied by T TOTALER Sydney",
       "regularPrice": 4.50,
       "items": [{
@@ -115,7 +115,7 @@
     },
     {
       "id": "specialty_teas",
-      "name": "SPECIALTY TEAS",
+      "name": "Specialty Tea",
       "regularPrice": 5.00,
       "items": [{
           "id": "specialty_1",
@@ -142,7 +142,7 @@
     },
     {
       "id": "fresh_juices",
-      "name": "FRESH SQUEEZED JUICES",
+      "name": "Fresh Squezed Juice",
       "regularPrice": 8.00,
       "items": [{
           "id": "juice_1",
@@ -167,7 +167,7 @@
     },
     {
       "id": "milkshakes",
-      "name": "MILKSHAKES",
+      "name": "Milkshake",
       "regularPrice": 7.00,
       "kidsPrice": 4.00,
       "items": [{
@@ -191,7 +191,7 @@
     },
     {
       "id": "smoothies",
-      "name": "SMOOTHIES",
+      "name": "Smoothie",
       "regularPrice": 8.00,
       "items": [{
           "id": "smoothie_1",
@@ -209,7 +209,7 @@
     },
     {
       "id": "frappes",
-      "name": "FRAPPES",
+      "name": "Frappe",
       "regularPrice": 7.50,
       "items": [{
           "id": "frappe_1",
@@ -234,7 +234,7 @@
     },
     {
       "id": "cold_drinks",
-      "name": "COLD DRINKS",
+      "name": "Cold Drinks",
       "items": [{
           "id": "cold_1",
           "name": "Coke, C/No Sugar, Diet Coke, Lemonade",
@@ -262,7 +262,7 @@
     },
     {
       "id": "alcohol",
-      "name": "ALCOHOL",
+      "name": "Alcohol",
       "note": "PLEASE ASK STAFF FOR AVAILABILITY",
       "items": [{
           "id": "alcohol_1",
