@@ -28,7 +28,7 @@ export const Section = styled.section<{ id: string }>`
   }
 
   &:nth-child(4) {
-    min-height: calc(100vh - 200px);
+    padding-bottom: 100px;
   }
 `;
 
