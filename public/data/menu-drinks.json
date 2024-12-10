@@ -142,7 +142,7 @@
     },
     {
       "id": "fresh_juices",
-      "name": "Fresh Squezed Juice",
+      "name": "Fresh Juice",
       "regularPrice": 8.00,
       "items": [{
           "id": "juice_1",
