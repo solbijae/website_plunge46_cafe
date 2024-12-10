@@ -14,10 +14,11 @@ export const Container = styled.div`
     align-items: center;
     ${({ theme }) => theme.typo.desktop_body_12_M}
     color: ${({ theme }) => theme.colors.gray_2};
-  }
 
-  ${({ theme }) => theme.mediaQueries.mobile`
-    max-width: 480px;
-    height: 60px;
-  `}
+    ${({ theme }) => theme.mediaQueries.mobile`
+      max-width: 480px;
+      height: 60px;
+      ${theme.typo.mobile_body_12_M};
+    `}
+  }
 `;

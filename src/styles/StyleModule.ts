@@ -12,6 +12,10 @@ export const ViewHeight = styled.div`
   align-items: center;
   width: auto;
   min-height: calc(100vh - 100px);
+
+  ${({ theme }) => theme.mediaQueries.mobile`
+      min-height: 150px;
+  `}
 `;
 
 export const Section = styled.section<{ id: string }>`
@@ -23,12 +27,12 @@ export const Section = styled.section<{ id: string }>`
     `}
   
   &:nth-child(3) {
-    padding-bottom: 100px;
+    padding: 50px 0;
     background-color: ${(props) => props.theme.colors.backGroundColor2};
   }
 
   &:nth-child(4) {
-    padding-bottom: 100px;
+    padding-top: 50px;
   }
 `;
 

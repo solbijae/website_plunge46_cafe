@@ -19,6 +19,11 @@ export const Title = styled.h3`
   ${({ theme }) => theme.typo.desktop_title_h3};
   color: ${({ theme }) => theme.colors.primaryColor};
   padding-bottom: 5rem;
+
+  ${({ theme }) => theme.mediaQueries.mobile`
+    padding-bottom: 2rem;
+    ${theme.typo.mobile_title_h3};
+  `}
 `;
 
 export const InfoWrap = styled.div`
@@ -36,6 +41,8 @@ export const InfoWrap = styled.div`
   ${({ theme }) => theme.mediaQueries.mobile`
     display: flex;
     flex-direction: column;
+    gap: 0.5rem;
+
     .item-0 {
       order: 0;
     }
@@ -66,12 +73,15 @@ export const InfoWrap = styled.div`
 export const InfoItems = styled.div`
   display: flex;
   gap: 0.7rem;
-  ${({ theme }) => theme.typo.desktop_body_20_M};
+  ${({ theme }) => theme.typo.desktop_body_18_M};
 
   iframe {
     width: 100%;
     height: 100%;
     border-radius: 5px;
+    ${({ theme }) => theme.mediaQueries.mobile`
+      display: none;
+    `}
   }
 
   p {
@@ -82,9 +92,22 @@ export const InfoItems = styled.div`
     display: block;
   }
 
+  &:nth-child(4) {
+    ${({ theme }) => theme.mediaQueries.mobile`
+      padding-left: calc(24px + 0.7rem);
+    `}
+  }
+
   &:nth-child(5) {
     padding-left: calc(24px + 0.7rem);
+    ${({ theme }) => theme.mediaQueries.mobile`
+      padding-left: 0;s
+    `}
   }
+
+  ${({ theme }) => theme.mediaQueries.mobile`
+    ${theme.typo.mobile_body_20_M};
+  `}
 `;
 
 export const TextWrap = styled.div`

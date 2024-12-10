@@ -13,7 +13,7 @@ export const Container = styled.div`
     width: 768px;
   `}
   ${({ theme }) => theme.mediaQueries.mobile`
-    width: 480px;
+    width: 400px;
   `}
 `;
 
@@ -21,6 +21,10 @@ export const Title = styled.h3`
   ${({ theme }) => theme.typo.desktop_title_h3};
   color: ${({ theme }) => theme.colors.primaryColor};
   padding-bottom: 3rem;
+
+  ${({ theme }) => theme.mediaQueries.mobile`
+    ${theme.typo.mobile_title_h3};
+  `}
 `;
 
 export const MenuContainer = styled.div`
@@ -28,6 +32,12 @@ export const MenuContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+
+  ${({ theme }) => theme.mediaQueries.mobile`
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  `}
 `;
 
 export const CategorySection = styled.div`
@@ -66,6 +76,13 @@ export const ItemsContainer = styled.div<{ categoryIndex: number }>`
         return '';
     }
   }}
+
+  ${({ theme }) => theme.mediaQueries.tablet`
+
+  `}
+  ${({ theme }) => theme.mediaQueries.mobile`
+    max-width: 400px;
+  `}
 `;
 
 export const MenuItem = styled.div`
@@ -73,12 +90,20 @@ export const MenuItem = styled.div`
   text-align: left;
   padding: 0.5rem;
   ${({ theme }) => theme.typo.desktop_body_14_R};
+
+  ${({ theme }) => theme.mediaQueries.mobile`
+    ${theme.typo.mobile_body_14_R};
+  `}
 `;
 
 export const ItemName = styled.h3`
   margin-bottom: 0.25rem;
   color: ${({ theme }) => theme.colors.primaryColor};
-  ${({ theme }) => theme.typo.desktop_body_20_M};
+  ${({ theme }) => theme.typo.desktop_body_18_M};
+
+  ${({ theme }) => theme.mediaQueries.mobile`
+    ${theme.typo.mobile_body_20_M};
+  `}
 `;
 
 export const ItemPrice = styled.p`
@@ -86,8 +111,11 @@ export const ItemPrice = styled.p`
   top: 10px;
   right: 0;
   color: ${({ theme }) => theme.colors.primaryColor};
-  ${({ theme }) => theme.typo.desktop_body_20_M};
+  ${({ theme }) => theme.typo.desktop_body_18_M};
 
+  ${({ theme }) => theme.mediaQueries.mobile`
+    ${theme.typo.mobile_body_20_M};
+  `}
 `;
 
 export const ItemDescription = styled.p`

@@ -13,7 +13,7 @@ export const Container = styled.div`
     width: 768px;
   `}
   ${({ theme }) => theme.mediaQueries.mobile`
-    width: 480px;
+    width: 400px;
   `}
 `;
 
@@ -27,16 +27,20 @@ export const Title = styled.h2`
   color: ${({ theme }) => theme.colors.primaryColor};
   padding-bottom: 3rem;
 
-  ${({ theme }) => theme.mediaQueries.tablet`
+  /* ${({ theme }) => theme.mediaQueries.tablet`
     display: none;
-  `}
+  `} */
   ${({ theme }) => theme.mediaQueries.mobile`
-    display: none;
+    ${theme.typo.mobile_title_h2};
   `}
 `;
 
 export const TextWrap = styled.div`
   ${({ theme }) => theme.typo.desktop_body_18_R};
+
+  ${({ theme }) => theme.mediaQueries.mobile`
+    ${theme.typo.mobile_body_18_R};
+  `}
 `;
 
 export const Image = styled.img`

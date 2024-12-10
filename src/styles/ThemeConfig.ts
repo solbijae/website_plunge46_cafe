@@ -42,11 +42,19 @@ export const ThemeConfig = {
   typo: {
     desktop_title_h2: typoCreator('8.67rem', 900, '0', '1'),
     desktop_title_h3: typoCreator('3rem', 700, '0', '1'),
-    desktop_body_20_M: typoCreator('1.125rem', 500, '0', '27px'),
+    desktop_body_24_M: typoCreator('1.15rem', 500, '0', '27px'),
+    desktop_body_18_M: typoCreator('1.125rem', 500, '0', '27px'),
     desktop_body_18_R: typoCreator('1.125rem', 400, '-0.192px', '24px'),
-    desktop_body_16_R: typoCreator('1rem', 400, '-0.192px', '23px'),
     desktop_body_14_R: typoCreator('0.875rem', 400, '-0.192px', '23px'),
     desktop_body_12_M: typoCreator('0.75rem', 500, '0.24px', '20px'),
+
+    mobile_title_h2: typoCreator('3.3rem', 900, '0', '1'),
+    mobile_title_h3: typoCreator('2rem', 700, '0', '1'),
+    mobile_body_24_M: typoCreator('1rem', 700, '0', '27px'),
+    mobile_body_20_M: typoCreator('0.75rem', 500, '0', '27px'),
+    mobile_body_18_R: typoCreator('0.75rem', 400, '0', '24px'),
+    mobile_body_14_R: typoCreator('0.875rem', 400, '-0.192px', '23px'),
+    mobile_body_12_M: typoCreator('0.65rem', 500, '0.24px', '20px'),
   },
 };
 

@@ -12,11 +12,15 @@ export const CategoryButton = styled.button`
   overflow: visible;
   background-color: ${({ theme }) => theme.colors.backGroundColor};
   color: ${({ theme }) => theme.colors.black};
-  ${({ theme }) => theme.typo.desktop_body_20_M};
+  ${({ theme }) => theme.typo.desktop_body_24_M};
   border: none;
   border-radius: 5px;
   box-shadow: none;
   cursor: pointer;
+
+  ${({ theme }) => theme.mediaQueries.mobile`
+    ${theme.typo.mobile_body_24_M};
+  `}
 `;
 
 export const PlusIcon = styled.div<{ isExpanded: boolean }>`
@@ -34,6 +38,10 @@ export const PlusIcon = styled.div<{ isExpanded: boolean }>`
     border-radius: 5px;
     padding: 0.3rem;
     ${({ theme }) => theme.typo.desktop_body_12_M};
+
+    ${({ theme }) => theme.mediaQueries.mobile`
+      ${theme.typo.mobile_body_12_M};
+    `}
   }
 `;
 
