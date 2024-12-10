@@ -5,13 +5,13 @@ export const Container = styled.div`
   flex-direction: column;
   margin: 0 auto;
   align-items: center;
-  width: 1040px;
+  width: calc(100vw * 0.8);
 
   ${({ theme }) => theme.mediaQueries.tablet`
-    width: 768px;
+    width: calc(100vw * 0.8);
   `}
   ${({ theme }) => theme.mediaQueries.mobile`
-    width: 480px;
+    width: calc(100vw * 0.8);
   `}
 `;
 
@@ -45,16 +45,18 @@ export const InfoWrap = styled.div`
 
   ${({ theme }) => theme.mediaQueries.tablet`
     grid-template-columns: 2fr 1fr;
-    column-gap: 2.5rem;
+    column-gap: 2rem;
     row-gap: 1.75rem;
-    width: 700px;
+    width: 90%;
+    padding: 1rem 1.5rem;
   `}
 
   ${({ theme }) => theme.mediaQueries.mobile`
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 400px;
+    width: 80%;
+    padding: 1rem 1.5rem;
 
     .item-0 {
       order: 0;
@@ -103,9 +105,6 @@ export const InfoItems = styled.div`
 
   span {
     display: block;
-    ${({ theme }) => theme.mediaQueries.mobile`
-      display: inline;
-    `}
   }
 
   &:nth-child(5) {

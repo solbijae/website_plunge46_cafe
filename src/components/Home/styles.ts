@@ -6,15 +6,16 @@ export const Container = styled.div`
   margin: 0 auto;
   text-align: center;
   align-items: center;
-  width: 1040px;
+  width: calc(100vw * 0.8);
+  max-width: 1040px;
   height: auto;
 
   ${({ theme }) => theme.mediaQueries.tablet`
-    width: 700px;
+    width: calc(100vw * 0.8);
   `}
   
   ${({ theme }) => theme.mediaQueries.mobile`
-    width: 400px;
+    width: calc(100vw * 0.8);
   `}
 `;
 
@@ -52,11 +53,4 @@ export const TextWrap = styled.div`
 export const Image = styled.img`
   padding-bottom: 5rem;
   width: 100%;
-
-  ${({ theme }) => theme.mediaQueries.tablet`
-    width: 700px;
-  `}
-  ${({ theme }) => theme.mediaQueries.mobile`
-    width: 400px;
-  `}
 `;

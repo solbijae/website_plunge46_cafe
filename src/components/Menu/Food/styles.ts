@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import {styled, css} from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
@@ -6,14 +6,15 @@ export const Container = styled.div`
   margin: 0 auto;
   text-align: center;
   align-items: center;
-  width: 1040px;
+  width: calc(100vw * 0.8);
+  max-width: 1040px;
   padding-bottom: 5rem;
 
   ${({ theme }) => theme.mediaQueries.tablet`
-    width: 700px;
+    width: calc(100vw * 0.8);
   `}
   ${({ theme }) => theme.mediaQueries.mobile`
-    width: 400px;
+    width: calc(100vw * 0.8);
   `}
 `;
 
@@ -37,9 +38,13 @@ export const MenuContainer = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
 
+  ${({ theme }) => theme.mediaQueries.tablet`
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  `}
+
   ${({ theme }) => theme.mediaQueries.mobile`
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 0.5rem;
   `}
 `;
@@ -52,7 +57,7 @@ export const CategorySection = styled.div`
 export const ItemsContainer = styled.div<{ categoryIndex: number }>`
   position: absolute;
   top: 310px;
-  width: 100vw;
+  width: calc(300% + 2rem);
   max-width: 1040px;
   margin-top: 1rem;
   margin-bottom: 2rem;
@@ -62,32 +67,48 @@ export const ItemsContainer = styled.div<{ categoryIndex: number }>`
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
   ${({ categoryIndex }) => {
-    switch (categoryIndex % 3) {
-      case 0:
-        return `
-          left: 0;
-        `;
-      case 1:
-        return `
-          left: 50%;
-          transform: translateX(-50%);
-        `;
-      case 2:
-        return `
-          right: 0;
-        `;
-      default:
-        return '';
+    if (categoryIndex % 3 === 0) {
+      return css`
+        left: 0;
+        transform: none;
+      `;
+    }
+    if (categoryIndex % 3 === 1) {
+      return css`
+        left: 50%;
+        transform: translateX(-50%);
+      `;
+    }
+    if (categoryIndex % 3 === 2) {
+      return css`
+        right: 0;
+        left: auto;
+        transform: none;
+      `;
     }
   }}
 
-  ${({ theme }) => theme.mediaQueries.tablet`
+  ${({ theme, categoryIndex }) => theme.mediaQueries.tablet`
     top: 260px;
-    max-width: 700px;
+    max-width: calc(100vw * 0.8);
+
+    ${() => {
+      if (categoryIndex % 2 === 1) {
+        return `
+          right: 0;
+          left: auto;
+          transform: none;
+        `;
+      }
+      return `
+        left: 0;
+        transform: none;
+      `;
+    }}
   `}
 
   ${({ theme }) => theme.mediaQueries.mobile`
-    max-width: 400px;
+    max-width: calc(100vw * 0.8);
   `}
 `;
 
@@ -96,6 +117,7 @@ export const MenuItem = styled.div`
   text-align: left;
   padding: 0.5rem;
   ${({ theme }) => theme.typo.desktop_body_14_R};
+  word-wrap: break-word;
 
   ${({ theme }) => theme.mediaQueries.tablet`
     ${theme.typo.tablet_body_14_R};
@@ -110,6 +132,7 @@ export const ItemName = styled.h3`
   margin-bottom: 0.25rem;
   color: ${({ theme }) => theme.colors.primaryColor};
   ${({ theme }) => theme.typo.desktop_body_18_M};
+  max-width: 75%;
 
   ${({ theme }) => theme.mediaQueries.tablet`
     ${theme.typo.tablet_body_20_M};

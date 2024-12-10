@@ -6,7 +6,7 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
+  max-width: 100vw;
   height: 100px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.black};
   background-color: ${({ theme }) => theme.colors.backGroundColor};
@@ -25,18 +25,11 @@ export const Container = styled.div`
 export const NavWrap = styled.div`
   display: flex;
   margin: 0 auto;
-  width: 1040px;
+  width: calc(100vw * 0.8);
   height: 100%;
   justify-content: space-between;
   align-items: center;
   color: ${({ theme }) => theme.colors.darkBlack};
-
-  ${({ theme }) => theme.mediaQueries.tablet`
-    width: 90%;
-  `}
-  ${({ theme }) => theme.mediaQueries.mobile`
-    width: 90%;
-  `}
 
   h1 {
     width: 80px;
