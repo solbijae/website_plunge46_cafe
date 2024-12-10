@@ -55,7 +55,8 @@ export const NavItemWrap = styled.ul`
   `}
 `;
 
-export const MenuIconWrapper = styled.div`
+export const HamburgerMenuWrap = styled.div`
+  position: relative;
   display: none;
   cursor: pointer;
 
@@ -63,3 +64,20 @@ export const MenuIconWrapper = styled.div`
     display: block;
   `}
 `;
+
+
+export const MenuItemWrap = styled.div`
+  display: none;
+  position: absolute;
+  right: 0;
+  padding: 0.75rem;
+  background-color: ${({ theme }) => theme.colors.white};
+  border: 1px solid ${({ theme }) => theme.colors.gray_3};
+  list-style: none;
+  z-index: 999;
+  ${({ theme }) => theme.typo.mobile_body_14_R};
+
+  li {
+    margin-bottom: 0.2rem;
+  }
+`
