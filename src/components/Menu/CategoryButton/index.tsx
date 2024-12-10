@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import * as S from './styles';
+import MenuImageSkeleton from 'components/Skeleton/MenuImage';
 
 type CategoryButtonProps = {
   category: {
@@ -14,11 +16,22 @@ const CategoryButton = ({
   isExpanded,
   onCategoryClick,
 }: CategoryButtonProps) => {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const handleImageLoad = () => {
+    setIsImageLoaded(true);
+  }
+
   return (
     <S.ButtonWrap>
       <S.CategoryButton onClick={() => onCategoryClick(category.id)}>
         {category.name}
-        <S.Image src={`/images/${category.name}.png`} alt='food and drinks'></S.Image>
+        {!isImageLoaded && <MenuImageSkeleton />}
+        <S.Image
+          src={`/images/${category.name}.png`}
+          alt='food and drinks'
+          onLoad={handleImageLoad}
+          style={{ display: isImageLoaded ? 'block' : 'none' }}
+        ></S.Image>
         <S.PlusIcon isExpanded={isExpanded} />
       </S.CategoryButton>
     </S.ButtonWrap>
