@@ -89,7 +89,7 @@ export const ItemsContainer = styled.div<{ categoryIndex: number }>`
   }}
 
   ${({ theme, categoryIndex }) => theme.mediaQueries.tablet`
-    top: 260px;
+    top: 250px;
     max-width: calc(100vw * 0.8);
 
     ${() => {
