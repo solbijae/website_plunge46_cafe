@@ -1,4 +1,4 @@
-## Renewing Plunge Website
+# Renewing Plunge Website
 ## Installation
 - `npm install`
 - `npm start`  

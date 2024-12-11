@@ -8,8 +8,8 @@ const Home = () => {
         <S.TextWrap>
           <p>Mediterranean inspired menu with locally roasted coffe.</p>
           <p>
-            Situated in Summer Hill, welcoming everyone 7 days a weeks with all
-            day breakfast and lunch menu
+            Situated in Summer Hill, welcoming everyone 7 days a week with all
+            day breakfast and lunch menu.
           </p>
         </S.TextWrap>
       </S.TextContainer>
